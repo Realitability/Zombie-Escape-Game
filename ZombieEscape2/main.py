@@ -414,6 +414,13 @@ class ZombieEscape(ui.Window):
     def canteenI(self):
         mb.showinfo("Location", "You find yourself inside a canteen")
         self.setup_room("CanteenI.png", "Move", "Search", "Use", "Hide")
+        NOISES=random.randint(1, 20)
+        if NOISES<=5:
+            self.noises1=True
+        elif NOISES<=10:
+            self.noises2=True
+        else:
+            pass
 
     def classroomO(self):
         mb.showinfo("Location", "You find yourself outside a classroom\n"
@@ -423,6 +430,13 @@ class ZombieEscape(ui.Window):
     def classroomI(self):
         mb.showinfo("Location", "You find yourself inside a classroom")
         self.setup_room("ClassroomI.png", "Move", "Search", "Use", "Hide")
+        NOISES=random.randint(1, 20)
+        if NOISES<=5:
+            self.noises1=True
+        elif NOISES<=10:
+            self.noises2=True
+        else:
+            pass
 
     def staffroomO(self):
         mb.showinfo("Location", "You find yourself outside a staffroom\n"
@@ -432,6 +446,13 @@ class ZombieEscape(ui.Window):
     def staffroomI(self):
         mb.showinfo("Location", "You find yourself inside a staffroom")
         self.setup_room("StaffroomI.png", "Move", "Search", "Use", "Hide")
+        NOISES=random.randint(1, 20)
+        if NOISES<=5:
+            self.noises1=True
+        elif NOISES<=10:
+            self.noises2=True
+        else:
+            pass
 
     def exit(self):
         self.setup_room("exitimg.jpg", None, None, None, None)
